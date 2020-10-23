@@ -1,0 +1,354 @@
+/* --- Settings --- */
+@import "./fonts.scss";
+
+//? fonts
+$evo: "Evo";
+
+//? colors
+$white: #fff;
+$bright-grey: #bbb;
+$grey: #3a3a3a;
+$mid-grey: #282828;
+$dark-grey: #0e0e0e;
+$green: #1eb064;
+$violet: #a257d4;
+$red: #f63b28;
+$black: #000;
+$button-red: $red;
+$button-orange: #f85325;
+$button-grey: #464646;
+
+//? color of element
+$background-color: $grey;
+$header-background: linear-gradient(0deg, $dark-grey, $mid-grey);
+$dark-button-background: $button-grey;
+$color-button-background: linear-gradient(90deg, $button-red, $button-orange);
+$font-color: $white;
+$h1-color: $button-red;
+$footer-background: $button-grey;
+
+//? font size
+$h1-font-size: 36px;
+$h2-font-size: 42px;
+$h3-font-size: 28px;
+$h4-font-size: 24px;
+$p-font-size: 20px;
+
+//? font faimly
+$font-family: $evo, Arial, Helvetica, sans-serif;
+
+//? elements
+$container-width: 1100px;
+$container-margin-top: 0;
+$containter-padding: 25px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // overflow-x: hidden;
+}
+
+body {
+  font-family: $font-family;
+  background: $background-color;
+  color: $font-color;
+  max-width: 100vw;
+
+  h2 {
+    font-size: $h2-font-size;
+  }
+
+  h3 {
+    font-size: $h3-font-size;
+  }
+
+  h4 {
+    font-size: $h4-font-size;
+  }
+
+  p {
+    font-size: $p-font-size;
+    color: $bright-grey;
+  }
+
+  a {
+    color: $red;
+    text-decoration: none;
+  }
+}
+
+header {
+  // * Wykonać po main - head
+  position: relative;
+  .logo {
+    position: absolute;
+    left: $containter-padding;
+    top: $containter-padding;
+    height: 28px;
+    span {
+      color: $white;
+    }
+  }
+  nav {
+    display: none;
+  }
+}
+main {
+  .header {
+    background: $header-background;
+    padding: $containter-padding;
+    padding-top: 125px;
+    text-align: center;
+    h1 {
+      text-transform: uppercase;
+      font-style: italic;
+      margin-bottom: 25px;
+      font-size: $h2-font-size;
+
+      .main__header__h2 {
+        color: $red;
+        font-weight: 600;
+      }
+    }
+    .begin {
+      margin-bottom: 100px;
+    }
+    .login {
+      position: relative;
+      h3 {
+        font-weight: normal;
+        margin-bottom: 20px;
+      }
+      form {
+        margin-bottom: 50px;
+        #login__login,
+        #login__password {
+          background-color: transparent;
+          border: 0;
+          border-bottom: 2px solid $white;
+          width: 280px;
+          height: 50px;
+          margin-bottom: 25px;
+          font-size: $p-font-size;
+          font-style: italic;
+          color: $white;
+        }
+        .form__wrapper {
+          display: flex;
+          justify-content: space-around;
+          margin-top: 15px;
+          #login__submit,
+          #login__sign_up {
+            border: 0;
+            background-color: $button-grey;
+            font-size: 18px;
+            font-family: $font-family;
+            color: $white;
+            width: 145px;
+            height: 50px;
+            border-radius: 20px;
+          }
+          #login__sign_up {
+            display: inline-block;
+            background: linear-gradient(90deg, $button-red, $button-orange);
+            width: 130px;
+            line-height: 50px;
+          }
+        }
+      }
+      .login__another_login__wrapper {
+        margin-bottom: 100px;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        .facebook {
+          margin: 0 25px;
+        }
+        img {
+          height: 30px;
+        }
+      }
+    }
+  }
+  .secure {
+    position: relative;
+    background-color: $white;
+    text-align: center;
+    padding: $containter-padding;
+    h2 {
+      color: $red;
+      font-size: 50px;
+      font-weight: 900;
+      font-style: italic;
+      margin-top: 175px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      span {
+        display: block;
+        font-size: 50px;
+      }
+    }
+    h3 {
+      color: $button-grey;
+      font-size: 32px;
+      font-weight: 900;
+      font-style: italic;
+      text-transform: uppercase;
+      span {
+        display: block;
+        margin-top: 15px;
+      }
+    }
+    .security_icon {
+      position: absolute;
+      width: 100px;
+      top: 25px;
+      left: 50%;
+      transform: translate(-50%, 50%);
+    }
+    .secure-icon {
+      display: block;
+      width: 50vw;
+      height: 400px;
+    }
+    .secure__text__wrapper {
+      padding: $containter-padding;
+      p {
+        color: $black;
+        margin-bottom: 25px;
+        font-size: 22px;
+      }
+    }
+    .secure__store__wrapper {
+      margin-bottom: 75px;
+      .store {
+        height: 45px;
+      }
+      .store:first-child {
+        margin-right: 10px;
+      }
+    }
+  }
+  .about_us {
+    padding: 0 $containter-padding;
+    margin-bottom: 20px;
+    h2 {
+      font-size: 20px;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      margin-top: 50px;
+    }
+    p {
+      font-size: 12px;
+      letter-spacing: 1px;
+      line-height: 18px;
+    }
+  }
+}
+
+footer {
+  position: relative;
+  padding: 0 $containter-padding;
+  h2 {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 600;
+    margin-bottom: 30px;
+    span {
+      color: $red;
+    }
+  }
+  .nav__footer {
+    margin-bottom: 30px;
+    h3 {
+      font-size: 20px;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+    li {
+      list-style: none;
+      margin-bottom: 10px;
+    }
+    a {
+      color: $bright-grey;
+      font-size: 12px;
+      font-weight: 600;
+    }
+  }
+  .footer__follow_us {
+    margin-bottom: 30px;
+    h3 {
+      font-size: 20px;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    a {
+      height: 40px;
+      margin-right: 15px;
+    }
+  }
+  .end {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100px;
+    h2 {
+      font-size: 16px;
+      font-weight: 300;
+      margin-top: 10px;
+    }
+    .end__wrapper {
+      a {
+        color: $white;
+        font-weight: 300;
+      }
+    }
+  }
+  .triangle {
+    position: absolute;
+    z-index: -1;
+    overflow-x: hidden;
+    bottom: 0;
+    left: 0;
+    height: 510px;
+    width: 100%;
+    .shape_1 {
+      position: absolute;
+      left: -560px;
+      bottom: -50px;
+      height: 510px;
+      // max-width: 100%;
+    }
+    .shape_2 {
+      position: absolute;
+      left: -520px;
+      bottom: -50px;
+      height: 475px;
+      // max-width: 100%;
+    }
+  }
+}
+aside {
+  #menu {
+    position: absolute;
+    top: $containter-padding + 11px;
+    right: $containter-padding;
+    .dash {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 40px;
+      height: 5px;
+      border-radius: 2.5px;
+      background-color: white;
+    }
+    :first-child {
+      top: -11px;
+    }
+    :last-child {
+      top: 11px;
+    }
+  }
+}
