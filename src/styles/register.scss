@@ -1,0 +1,38 @@
+/* --- Settings --- */
+@import "./fonts.scss";
+
+//? fonts
+$evo: "Evo";
+
+//? colors
+$white: #fff;
+$bright-grey: #bbb;
+$grey: #3a3a3a;
+$mid-grey: #282828;
+$dark-grey: #0e0e0e;
+$green: #1eb064;
+$violet: #a257d4;
+$red: #f63b28;
+$black: #000;
+$button-red: $red;
+$button-orange: #f85325;
+$button-grey: #464646;
+
+//? color of element
+$background-color: $grey;
+$header-background: linear-gradient(0deg, $dark-grey, $mid-grey);
+$dark-button-background: $button-grey;
+$color-button-background: linear-gradient(90deg, $button-red, $button-orange);
+$font-color: $white;
+$h1-color: $button-red;
+$footer-background: $button-grey;
+
+//? font size
+$h1-font-size: 36px;
+$h2-font-size: 42px;
+$h3-font-size: 28px;
+$h4-font-size: 24px;
+$p-font-size: 20px;
+
+//? font faimly
+$font-family: $evo, Arial, Helvetica, sans-serif;
