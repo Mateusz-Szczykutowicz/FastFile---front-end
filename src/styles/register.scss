@@ -207,26 +207,22 @@ body {
               color: $white;
             }
           }
+          .first {
+            margin-right: 0;
+          }
           .button {
-            margin: 0;
-            padding: 0 25px;
-            text-align: center;
-            line-height: 40px;
-            background: $dark-button-background;
-            transform: translateY(-10px);
+            padding: 8px 30px;
+            background-color: $button-grey;
             border-radius: 20px 0 0 20px;
-            a {
-              color: $bright-grey;
-            }
-
-            &:last-child {
-              background: $color-button-background;
-              height: 40px;
-              border-radius: 0 20px 20px 0;
-              a {
-                color: $white;
-              }
-            }
+            color: $bright-grey;
+          }
+          .second {
+            background-color: $button-red;
+            border-radius: 0 20px 20px 0;
+            color: $white;
+          }
+          .last {
+            margin-right: 0;
           }
         }
       }

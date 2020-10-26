@@ -2,7 +2,7 @@ const submitButton = document.querySelector("#login__submit");
 const login = document.querySelector("#login__login");
 const password = document.querySelector("#login__password");
 const message = document.querySelector("#login__message");
-
+const signUp = document.querySelector("#login__sign_up");
 const formData = new FormData();
 
 submitButton.addEventListener("click", (e) => {
@@ -28,4 +28,8 @@ submitButton.addEventListener("click", (e) => {
     .catch((err) => {
       console.log("err :>> ", err);
     });
+});
+
+signUp.addEventListener("click", () => {
+  location.href = "http://localhost/register";
 });
