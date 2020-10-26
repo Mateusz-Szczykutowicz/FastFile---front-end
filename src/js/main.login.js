@@ -19,7 +19,7 @@ submitButton.addEventListener("click", (e) => {
     })
     .then((data) => {
       if (data["status"]) {
-        location.href = "http://localhost/dashboard";
+        location.href = `/dashboard`;
       } else {
         password.value = "";
         message.innerHTML = "Wrong login or password";
@@ -31,5 +31,5 @@ submitButton.addEventListener("click", (e) => {
 });
 
 signUp.addEventListener("click", () => {
-  location.href = "http://localhost/register";
+  location.href = `/register`;
 });
