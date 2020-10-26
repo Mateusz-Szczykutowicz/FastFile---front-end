@@ -230,15 +230,26 @@ main {
       }
     }
   }
+}
+
+footer {
+  position: relative;
+  padding: $containter-padding;
+
+  .logo {
+    height: 22px;
+    position: absolute;
+    top: 29%;
+  }
   .about_us {
-    padding: 0 $containter-padding;
-    margin-bottom: 20px;
-    h2 {
+    padding: 0;
+    margin-bottom: 100px;
+    margin-top: 30px;
+    h3 {
       font-size: 20px;
       font-weight: 400;
       text-transform: uppercase;
       margin-bottom: 20px;
-      margin-top: 50px;
     }
     p {
       font-size: 12px;
@@ -246,37 +257,26 @@ main {
       line-height: 18px;
     }
   }
-}
-
-footer {
-  position: relative;
-  padding: 0 $containter-padding;
-  h2 {
-    font-size: 24px;
-    font-style: italic;
-    font-weight: 600;
-    margin-bottom: 30px;
-    span {
-      color: $red;
-    }
-  }
-  .nav__footer {
-    margin-bottom: 30px;
+  .quick_links {
     h3 {
       font-size: 20px;
       font-weight: 400;
       margin-bottom: 20px;
     }
-    li {
-      list-style: none;
-      margin-bottom: 10px;
-    }
-    a {
-      color: $bright-grey;
-      font-size: 12px;
-      font-weight: 600;
+    .nav__footer {
+      margin-bottom: 30px;
+      li {
+        list-style: none;
+        margin-bottom: 15px;
+      }
+      a {
+        color: $bright-grey;
+        font-size: 12px;
+        font-weight: 600;
+      }
     }
   }
+
   .footer__follow_us {
     margin-bottom: 30px;
     h3 {
@@ -394,42 +394,31 @@ aside {
         }
       }
     }
-    .about_us {
-      width: 360px;
-      margin: 100px 75px 50px 75px;
-      h2 {
-        font-size: 24px;
-      }
-      p {
-        font-size: 16px;
-        line-height: 24px;
-      }
-    }
   }
   footer {
-    padding: 10px 75px 20px 100px;
-    h2 {
-      position: absolute;
-      top: -75px;
-      right: 125px;
+    padding: 75px 75px 40px 75px;
+
+    .logo {
+      top: 45%;
     }
-    .nav__footer {
-      position: absolute;
-      top: -300px;
-      right: 100px;
-      h3 {
-        font-size: 24px;
+    .footer__wrapper {
+      justify-content: space-between;
+      display: flex;
+      flex-wrap: wrap;
+      .about_us {
+        width: 40%;
+        margin-right: 20%;
+        margin-top: 0;
       }
-      ul {
-        li {
-          a {
-            font-size: 16px;
-          }
-        }
+      .quick_links {
+        width: 30%;
+      }
+      .footer__follow_us {
+        width: 50%;
       }
     }
     .end {
-      margin-top: 50px;
+      margin-top: 25px;
       text-align: center;
       justify-content: center;
       h2 {
