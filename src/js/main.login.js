@@ -10,7 +10,7 @@ submitButton.addEventListener("click", (e) => {
   const formData = new FormData();
   formData.append("login", login.value);
   formData.append("password", password.value);
-  fetch("/auth/login", {
+  fetch("http://localhost/auth/login", {
     method: "POST",
     body: formData,
   })

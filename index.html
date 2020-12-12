@@ -45,7 +45,7 @@
         <!-- ? Login ? -->
         <article class="login">
           <h3>User Login</h3>
-          <form action="#" method="post">
+          <form action="http://localhost/auth/login" method="post">
             <input
               type="text"
               name="login"
@@ -58,6 +58,7 @@
               id="login__password"
               placeholder="Password"
             />
+            <label id="login__message"></label>
             <label class="form__wrapper">
               <input type="submit" value="Sign In" id="login__submit" />
               <button type="button" id="login__sign_up">Sign Up</button>
